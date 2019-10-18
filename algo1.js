@@ -17,17 +17,19 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
-const seatsInTheater = (nCols, nSeat ) => {
-  for (let i= 1; i< 26; i++) {
-    for (let j =1; j <100 ;j++) {
-      
-     seatsInTheater.push([nCols,nSeat]) 
-    }
+
+function seatList(){
+let list;
+  for (let column = 1; column <= 26; column++ ) {
+    for (let seat =1; seat <=100 ;seat++) {
+     list.push(`${column}-${seat}`)
     
+    }
+    return list;
   }
 }
   
-console.log(seatsInTheater)
+
 
 
 
