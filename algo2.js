@@ -26,12 +26,13 @@ let minMax = (array) => {
       if (array[i]< min) {
         min = array [i];
       }
-      if (array[i] === max) {
+      if (array[i] > max) {
         max = array[i];
       }
       
     }
-    array.push(min, max);
+    output.push(min, max);
     return output;
-  }
+  };
+  console.log(minMax([56, 7, 63, 9, 7, 12, 85]));
   
