@@ -19,17 +19,19 @@ Au final la liste devra ressembler à :
 */
 
 function seatList(){
-let list;
+let list = []
   for (let column = 1; column <= 26; column++ ) {
     for (let seat =1; seat <=100 ;seat++) {
      list.push(`${column}-${seat}`)
     
     }
-    return list;
+   
   }
+  console.log(list);
+  return list;
 }
   
-
+seatList();
 
 
 
